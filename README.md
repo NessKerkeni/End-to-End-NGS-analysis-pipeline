@@ -22,6 +22,7 @@ This project is designed to be **reproducible, scalable, and beginner-friendly**
 ---
 
 ## Repository Structure
+```
 ├── config/ # Pipeline configuration and sample metadata
 ├── workflow/ # Snakemake workflow, rules, environments, scripts
 ├── data/ # Input FASTQ files (not versioned)
@@ -30,11 +31,11 @@ This project is designed to be **reproducible, scalable, and beginner-friendly**
 ├── LICENSE
 ├── README.md
 └── CHANGELOG.md
+```
 
 ---
 
 ## Input Requirements
-
 - Paired-end FASTQ files (`sample_R1.fastq.gz` and `sample_R2.fastq.gz`)
 - Reference genome FASTA
 - Sample metadata TSV (see `config/samples.tsv`)
@@ -61,9 +62,14 @@ conda create -c conda-forge -c bioconda -n snakemake snakemake
 conda activate snakemake
 
 ## Running the Pipeline
+```
 snakemake --use-conda --cores 8
+```
+
+---
 
 ## Expected Outputs
+```
 results/
 ├── qc/                     # FastQC HTML reports
 ├── trimmed/                # Trimmed FASTQ files
@@ -71,4 +77,5 @@ results/
 ├── variants/               # Raw VCF files
 ├── annotation/             # Annotated VCF files
 └── multiqc/                # MultiQC report (HTML)
+```
 
