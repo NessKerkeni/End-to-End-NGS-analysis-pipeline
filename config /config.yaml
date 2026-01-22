@@ -1,0 +1,14 @@
+reference:
+  genome: resources/hg38.fa
+  snpeff_db: GRCh38.99
+
+trimming:
+  min_length: 30
+
+alignment:
+  read_group: "@RG\\tID:{sample}\\tSM:{sample}\\tPL:ILLUMINA"
+
+variant_calling:
+  min_base_quality: 20
+
+output_dir: results
