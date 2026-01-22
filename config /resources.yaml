@@ -1,0 +1,3 @@
+default:
+  threads: 4
+  mem_mb: 8000
