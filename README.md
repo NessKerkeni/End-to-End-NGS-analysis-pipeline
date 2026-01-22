@@ -25,12 +25,8 @@ This project is designed to be **reproducible, scalable, and beginner-friendly**
 ```
 ├── config/ # Pipeline configuration and sample metadata
 ├── workflow/ # Snakemake workflow, rules, environments, scripts
-├── data/ # Input FASTQ files (not versioned)
-├── results/ # Pipeline outputs (ignored in git)
-├── tests/ # Minimal test dataset for CI
 ├── LICENSE
 ├── README.md
-└── CHANGELOG.md
 ```
 
 ---
